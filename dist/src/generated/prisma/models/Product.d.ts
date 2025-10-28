@@ -22,24 +22,24 @@ export type ProductSumAggregateOutputType = {
 };
 export type ProductMinAggregateOutputType = {
     id: number | null;
-    name: string | null;
     imageUrl: string | null;
+    name: string | null;
     price: runtime.Decimal | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 };
 export type ProductMaxAggregateOutputType = {
     id: number | null;
-    name: string | null;
     imageUrl: string | null;
+    name: string | null;
     price: runtime.Decimal | null;
     createdAt: Date | null;
     updatedAt: Date | null;
 };
 export type ProductCountAggregateOutputType = {
     id: number;
-    name: number;
     imageUrl: number;
+    name: number;
     price: number;
     createdAt: number;
     updatedAt: number;
@@ -55,24 +55,24 @@ export type ProductSumAggregateInputType = {
 };
 export type ProductMinAggregateInputType = {
     id?: true;
-    name?: true;
     imageUrl?: true;
+    name?: true;
     price?: true;
     createdAt?: true;
     updatedAt?: true;
 };
 export type ProductMaxAggregateInputType = {
     id?: true;
-    name?: true;
     imageUrl?: true;
+    name?: true;
     price?: true;
     createdAt?: true;
     updatedAt?: true;
 };
 export type ProductCountAggregateInputType = {
     id?: true;
-    name?: true;
     imageUrl?: true;
+    name?: true;
     price?: true;
     createdAt?: true;
     updatedAt?: true;
@@ -156,8 +156,8 @@ export type ProductGroupByArgs<ExtArgs extends runtime.Types.Extensions.Internal
 };
 export type ProductGroupByOutputType = {
     id: number;
-    name: string;
     imageUrl: string;
+    name: string;
     price: runtime.Decimal;
     createdAt: Date;
     updatedAt: Date;
@@ -175,16 +175,16 @@ export type ProductWhereInput = {
     OR?: Prisma.ProductWhereInput[];
     NOT?: Prisma.ProductWhereInput | Prisma.ProductWhereInput[];
     id?: Prisma.IntFilter<"Product"> | number;
-    name?: Prisma.StringFilter<"Product"> | string;
     imageUrl?: Prisma.StringFilter<"Product"> | string;
+    name?: Prisma.StringFilter<"Product"> | string;
     price?: Prisma.DecimalFilter<"Product"> | runtime.Decimal | runtime.DecimalJsLike | number | string;
     createdAt?: Prisma.DateTimeFilter<"Product"> | Date | string;
     updatedAt?: Prisma.DateTimeFilter<"Product"> | Date | string;
 };
 export type ProductOrderByWithRelationInput = {
     id?: Prisma.SortOrder;
-    name?: Prisma.SortOrder;
     imageUrl?: Prisma.SortOrder;
+    name?: Prisma.SortOrder;
     price?: Prisma.SortOrder;
     createdAt?: Prisma.SortOrder;
     updatedAt?: Prisma.SortOrder;
@@ -194,16 +194,16 @@ export type ProductWhereUniqueInput = Prisma.AtLeast<{
     AND?: Prisma.ProductWhereInput | Prisma.ProductWhereInput[];
     OR?: Prisma.ProductWhereInput[];
     NOT?: Prisma.ProductWhereInput | Prisma.ProductWhereInput[];
-    name?: Prisma.StringFilter<"Product"> | string;
     imageUrl?: Prisma.StringFilter<"Product"> | string;
+    name?: Prisma.StringFilter<"Product"> | string;
     price?: Prisma.DecimalFilter<"Product"> | runtime.Decimal | runtime.DecimalJsLike | number | string;
     createdAt?: Prisma.DateTimeFilter<"Product"> | Date | string;
     updatedAt?: Prisma.DateTimeFilter<"Product"> | Date | string;
 }, "id">;
 export type ProductOrderByWithAggregationInput = {
     id?: Prisma.SortOrder;
-    name?: Prisma.SortOrder;
     imageUrl?: Prisma.SortOrder;
+    name?: Prisma.SortOrder;
     price?: Prisma.SortOrder;
     createdAt?: Prisma.SortOrder;
     updatedAt?: Prisma.SortOrder;
@@ -218,69 +218,69 @@ export type ProductScalarWhereWithAggregatesInput = {
     OR?: Prisma.ProductScalarWhereWithAggregatesInput[];
     NOT?: Prisma.ProductScalarWhereWithAggregatesInput | Prisma.ProductScalarWhereWithAggregatesInput[];
     id?: Prisma.IntWithAggregatesFilter<"Product"> | number;
-    name?: Prisma.StringWithAggregatesFilter<"Product"> | string;
     imageUrl?: Prisma.StringWithAggregatesFilter<"Product"> | string;
+    name?: Prisma.StringWithAggregatesFilter<"Product"> | string;
     price?: Prisma.DecimalWithAggregatesFilter<"Product"> | runtime.Decimal | runtime.DecimalJsLike | number | string;
     createdAt?: Prisma.DateTimeWithAggregatesFilter<"Product"> | Date | string;
     updatedAt?: Prisma.DateTimeWithAggregatesFilter<"Product"> | Date | string;
 };
 export type ProductCreateInput = {
-    name: string;
     imageUrl: string;
+    name: string;
     price: runtime.Decimal | runtime.DecimalJsLike | number | string;
     createdAt?: Date | string;
     updatedAt?: Date | string;
 };
 export type ProductUncheckedCreateInput = {
     id?: number;
-    name: string;
     imageUrl: string;
+    name: string;
     price: runtime.Decimal | runtime.DecimalJsLike | number | string;
     createdAt?: Date | string;
     updatedAt?: Date | string;
 };
 export type ProductUpdateInput = {
-    name?: Prisma.StringFieldUpdateOperationsInput | string;
     imageUrl?: Prisma.StringFieldUpdateOperationsInput | string;
+    name?: Prisma.StringFieldUpdateOperationsInput | string;
     price?: Prisma.DecimalFieldUpdateOperationsInput | runtime.Decimal | runtime.DecimalJsLike | number | string;
     createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string;
     updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string;
 };
 export type ProductUncheckedUpdateInput = {
     id?: Prisma.IntFieldUpdateOperationsInput | number;
-    name?: Prisma.StringFieldUpdateOperationsInput | string;
     imageUrl?: Prisma.StringFieldUpdateOperationsInput | string;
+    name?: Prisma.StringFieldUpdateOperationsInput | string;
     price?: Prisma.DecimalFieldUpdateOperationsInput | runtime.Decimal | runtime.DecimalJsLike | number | string;
     createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string;
     updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string;
 };
 export type ProductCreateManyInput = {
     id?: number;
-    name: string;
     imageUrl: string;
+    name: string;
     price: runtime.Decimal | runtime.DecimalJsLike | number | string;
     createdAt?: Date | string;
     updatedAt?: Date | string;
 };
 export type ProductUpdateManyMutationInput = {
-    name?: Prisma.StringFieldUpdateOperationsInput | string;
     imageUrl?: Prisma.StringFieldUpdateOperationsInput | string;
+    name?: Prisma.StringFieldUpdateOperationsInput | string;
     price?: Prisma.DecimalFieldUpdateOperationsInput | runtime.Decimal | runtime.DecimalJsLike | number | string;
     createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string;
     updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string;
 };
 export type ProductUncheckedUpdateManyInput = {
     id?: Prisma.IntFieldUpdateOperationsInput | number;
-    name?: Prisma.StringFieldUpdateOperationsInput | string;
     imageUrl?: Prisma.StringFieldUpdateOperationsInput | string;
+    name?: Prisma.StringFieldUpdateOperationsInput | string;
     price?: Prisma.DecimalFieldUpdateOperationsInput | runtime.Decimal | runtime.DecimalJsLike | number | string;
     createdAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string;
     updatedAt?: Prisma.DateTimeFieldUpdateOperationsInput | Date | string;
 };
 export type ProductCountOrderByAggregateInput = {
     id?: Prisma.SortOrder;
-    name?: Prisma.SortOrder;
     imageUrl?: Prisma.SortOrder;
+    name?: Prisma.SortOrder;
     price?: Prisma.SortOrder;
     createdAt?: Prisma.SortOrder;
     updatedAt?: Prisma.SortOrder;
@@ -291,16 +291,16 @@ export type ProductAvgOrderByAggregateInput = {
 };
 export type ProductMaxOrderByAggregateInput = {
     id?: Prisma.SortOrder;
-    name?: Prisma.SortOrder;
     imageUrl?: Prisma.SortOrder;
+    name?: Prisma.SortOrder;
     price?: Prisma.SortOrder;
     createdAt?: Prisma.SortOrder;
     updatedAt?: Prisma.SortOrder;
 };
 export type ProductMinOrderByAggregateInput = {
     id?: Prisma.SortOrder;
-    name?: Prisma.SortOrder;
     imageUrl?: Prisma.SortOrder;
+    name?: Prisma.SortOrder;
     price?: Prisma.SortOrder;
     createdAt?: Prisma.SortOrder;
     updatedAt?: Prisma.SortOrder;
@@ -331,44 +331,44 @@ export type IntFieldUpdateOperationsInput = {
 };
 export type ProductSelect<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
     id?: boolean;
-    name?: boolean;
     imageUrl?: boolean;
+    name?: boolean;
     price?: boolean;
     createdAt?: boolean;
     updatedAt?: boolean;
 }, ExtArgs["result"]["product"]>;
 export type ProductSelectCreateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
     id?: boolean;
-    name?: boolean;
     imageUrl?: boolean;
+    name?: boolean;
     price?: boolean;
     createdAt?: boolean;
     updatedAt?: boolean;
 }, ExtArgs["result"]["product"]>;
 export type ProductSelectUpdateManyAndReturn<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetSelect<{
     id?: boolean;
-    name?: boolean;
     imageUrl?: boolean;
+    name?: boolean;
     price?: boolean;
     createdAt?: boolean;
     updatedAt?: boolean;
 }, ExtArgs["result"]["product"]>;
 export type ProductSelectScalar = {
     id?: boolean;
-    name?: boolean;
     imageUrl?: boolean;
+    name?: boolean;
     price?: boolean;
     createdAt?: boolean;
     updatedAt?: boolean;
 };
-export type ProductOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "name" | "imageUrl" | "price" | "createdAt" | "updatedAt", ExtArgs["result"]["product"]>;
+export type ProductOmit<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = runtime.Types.Extensions.GetOmit<"id" | "imageUrl" | "name" | "price" | "createdAt" | "updatedAt", ExtArgs["result"]["product"]>;
 export type $ProductPayload<ExtArgs extends runtime.Types.Extensions.InternalArgs = runtime.Types.Extensions.DefaultArgs> = {
     name: "Product";
     objects: {};
     scalars: runtime.Types.Extensions.GetPayloadResult<{
         id: number;
-        name: string;
         imageUrl: string;
+        name: string;
         price: runtime.Decimal;
         createdAt: Date;
         updatedAt: Date;
@@ -727,8 +727,8 @@ export interface Prisma__ProductClient<T, Null = never, ExtArgs extends runtime.
  */
 export interface ProductFieldRefs {
     readonly id: Prisma.FieldRef<"Product", 'Int'>;
-    readonly name: Prisma.FieldRef<"Product", 'String'>;
     readonly imageUrl: Prisma.FieldRef<"Product", 'String'>;
+    readonly name: Prisma.FieldRef<"Product", 'String'>;
     readonly price: Prisma.FieldRef<"Product", 'Decimal'>;
     readonly createdAt: Prisma.FieldRef<"Product", 'DateTime'>;
     readonly updatedAt: Prisma.FieldRef<"Product", 'DateTime'>;
